@@ -1,0 +1,33 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "kian23790.input-buffer",
+	"name": "Input Buffer",
+	"version": "v1.0.0",
+	"developer": "kian23790",
+	"description": "Remembers an early click and fires it on the first tick where it can actually take effect.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enable Buffer",
+			"default": true
+		},
+		"buffer-ticks": {
+			"type": "int",
+			"name": "Buffer Window (ticks)",
+			"description": "How many physics ticks an early click is remembered for.",
+			"default": 2,
+			"min": 1,
+			"max": 10,
+			"control": {
+				"slider": true,
+				"input": true
+			}
+		}
+	}
+}
